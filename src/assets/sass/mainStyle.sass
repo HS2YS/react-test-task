@@ -1,0 +1,191 @@
+@font-face 
+    font-family: 'Montserrat'
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf)
+
+$Green: #B9FF66
+$Grey: #F3F3F3
+$Dark: #191A23
+
+*
+    padding: 0
+    margin: 0
+    font-family: 'Montserrat'
+.container 
+    padding: 0 100px
+    display: flex
+.flex
+    display: flex
+
+span
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+p 
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+h1 
+    font-size: 60px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h2 
+    font-size: 40px
+
+h3 
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h4 
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 28px
+
+header
+    background: #fff
+    h1
+        margin-top: 20px
+        padding: 0 8px
+        border-radius: 7px
+button
+    outline: none
+    border: 0
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 28px
+.error
+    color: red
+
+main
+    margin: 80px 0
+    .seminar-list
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 40px
+        row-gap: 40px
+        width: 100%
+        .seminar-card
+            padding: 40px 50px
+            align-items: center
+            justify-content: space-between
+            gap: 20px
+            background: $Grey
+            border-radius: 45px
+            .seminar-content
+                    flex-direction: column
+                    gap: 25px
+                    justify-content: space-between
+                    align-items: flex-start
+                    p
+                        color: $Dark
+            .seminar-info
+                flex-direction: column
+                justify-content: flex-end
+                span
+                    color: #333
+            img
+                border-radius: 25px
+                width: 250px
+            .seminar-actions
+                gap: 40px
+                button
+                    padding: 10px 20px
+                    border-radius: 10px
+                    cursor: pointer
+                    color: $Dark
+                    transition: all 0.3s ease
+                    &:nth-child(1)
+                        color: #000
+                        border: 1px solid $Dark
+                        background: #fff
+                        &:hover
+                            background: $Dark
+                            color: #Fff
+                    &:nth-child(2)
+                        border: 1px solid #d10606
+                        &:hover
+                            background: #d10606
+                            color: #Fff
+                    &:hover
+                        transform: scale(1.1)
+
+.modal-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    align-items: center
+    justify-content: center
+    z-index: 1
+    background: rgba(0, 0, 0, 0.5)
+    .modal-content
+        padding: 50px
+        border-radius: 45px
+        border: 2px solid $Dark
+        background: $Grey
+        width: 50%
+        max-height: 80vh
+        align-items: center
+        flex-direction: column
+        gap: 80px
+        h2
+            background: $Green
+            border-radius: 7px
+            padding: 2px 7px
+        form
+            width: 60%
+            display: flex
+            flex-direction: column
+            gap: 30px
+            .form-group
+                display: flex
+                flex-direction: column
+                gap: 10px
+                label
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                input, textarea
+                    padding: 10px
+                    outline: none
+                    border: 1px solid $Dark
+                    border-radius: 8px
+
+.modal-actions
+    display: flex
+    gap: 40px
+    justify-content: space-between
+    button
+        width: 100%
+        padding: 10px 40px
+        border-radius: 10px
+        cursor: pointer
+        color: $Dark
+        transition: all 0.3s ease
+        &:nth-child(1)
+            color: #000
+            border: 1px solid $Dark
+            background: #fff
+            &:hover
+                background: $Green
+                color: $Dark
+        &:nth-child(2)
+            border: 1px solid#d10606
+            &:hover
+                background:#d10606
+                color: #Fff
+        &:hover
+            transform: scale(1.1)
+
+
+ 
